@@ -5,24 +5,24 @@ const { IP, PORT, playerName } = require("./constants");
 const connect = () => {
   const conn = net.createConnection({
     host: IP,
-    port: PORT,
-  });
-
-  conn.on("data", (data) => {
-    console.log(data);
-  });
-
-  conn.on("connect", () => {
-    console.log("Successfully connected to game server");
-    conn.write(`Name: ${playerName}`);
-    // conn.write("Move: up");
-    // setTimeout(() => conn.write("Move: down"), 1000);
-    // setInterval(() => conn.write("Move: left"), 1000);
+    port: PORT
   });
 
   // interpret incoming data as text
   conn.setEncoding("utf8");
 
+  // 'data' event handler to log data received from server
+  conn.on("data", (data) => {
+    console.log(data);
+  });
+
+  // 'connect' event handler to log success and send playerName to server
+  conn.on("connect", () => {
+    console.log("Successfully connected to game server");
+    conn.write(`Name: ${playerName}`);
+  });
+
+  // return connect object
   return conn;
 };
 
