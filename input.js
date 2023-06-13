@@ -1,3 +1,4 @@
+const { inputKeys } = require("./constants");
 let connection;
 
 // setup interface to handle user input from stdin
@@ -15,20 +16,8 @@ const handleUserInput = (key) => {
   // exit on ctrl+c
   if (key === '\u0003') {
     process.exit();
-  } else if (key === 'w') {
-    connection.write("Move: up");
-  } else if (key === 'a') {
-    connection.write("Move: left");
-  } else if (key === 's') {
-    connection.write("Move: down");
-  } else if (key === 'd') {
-    connection.write("Move: right");
-  } else if (key === 'h') {
-    connection.write("Say: Snek is hungry");
-  } else if (key === 'j') {
-    connection.write("Say: I will win!");
-  } else if (key === 'k') {
-    connection.write("Say: Gotcha");
+  } else {
+    connection.write(inputKeys[key]);
   }
 };
 
