@@ -1,7 +1,7 @@
 const IP = 'localhost';
 const PORT = 50541;
 
-const playerName = "CAT";
+const playerName = "Cat";
 
 const inputKeys = {
   w: "Move: up",
