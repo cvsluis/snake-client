@@ -1,4 +1,4 @@
-const { inputKeys } = require("./constants");
+const { INPUT_KEYS } = require("./constants");
 
 // declare global variable for connection
 let connection;
@@ -22,7 +22,7 @@ const handleUserInput = (key) => {
     process.exit();
     // use imported inputKeys to write to server
   } else {
-    connection.write(inputKeys[key]);
+    connection.write(INPUT_KEYS[key]);
   }
 };
 

@@ -1,9 +1,9 @@
 const IP = 'localhost';
 const PORT = 50541;
 
-const playerName = "Cat";
+const PLAYER_NAME = "Cat";
 
-const inputKeys = {
+const INPUT_KEYS = {
   w: "Move: up",
   a: "Move: left",
   s: "Move: down",
@@ -17,6 +17,6 @@ const inputKeys = {
 module.exports = {
   IP,
   PORT,
-  playerName,
-  inputKeys
+  PLAYER_NAME,
+  INPUT_KEYS
 };
