@@ -3,10 +3,10 @@ const { inputKeys } = require("./constants");
 // declare global variable for connection
 let connection;
 
+// setup interface to handle user input from stdin
 const setupInput = (conn) => {
   // assign conn object argument to connection variable
   connection = conn;
-  // setup interface to handle user input from stdin
   const stdin = process.stdin;
   stdin.setRawMode(true);
   stdin.setEncoding("utf8");
