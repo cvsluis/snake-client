@@ -16,8 +16,7 @@ This client project was built as a part of my learnings at [Lighthouse Labs](htt
 
 ## Final Product
 
-!["image of snake client project"](https://github.com/cvsluis/snake-client/assets/122842285/f720f8d4-c5b7-440d-818b-62fb41347989) !["image of two player snake client project"](https://github.com/cvsluis/snake-client/assets/122842285/bc813b12-9516-4c62-ac24-ed34738958b9)
-
+!["image of two player snake client project"](https://github.com/cvsluis/snake-client/assets/122842285/bc813b12-9516-4c62-ac24-ed34738958b9)
 
 ## Getting Started
 
