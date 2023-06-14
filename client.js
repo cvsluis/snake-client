@@ -22,6 +22,11 @@ const connect = () => {
     conn.write(`Name: ${PLAYER_NAME}`);
   });
 
+  // 'end' event handler to log checkout message when player is kicked off
+  conn.on("end", () => {
+    console.log("Game over. Thanks for playing 🐍");
+  });
+
   // return connect object
   return conn;
 };
