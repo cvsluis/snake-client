@@ -1,7 +1,9 @@
 const IP = 'localhost';
 const PORT = 50541;
 
+// set player username to command line argument
 let PLAYER_NAME = process.argv[2];
+// if none provided, set to default 'snk'
 if (process.argv[2] === undefined) {
   PLAYER_NAME = 'snk';
 }

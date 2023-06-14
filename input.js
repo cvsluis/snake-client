@@ -16,6 +16,7 @@ const setupInput = (conn) => {
   return stdin;
 };
 
+// function that manages user key input
 const handleUserInput = (key) => {
   // exit on ctrl+c
   if (key === '\u0003') {
