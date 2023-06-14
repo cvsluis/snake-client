@@ -23,6 +23,9 @@ This client project was built as a part of my learnings at [Lighthouse Labs](htt
 
 - Follow steps inside the [snek server repo](https://github.com/lighthouse-labs/snek-multiplayer) to run the server side.
 - Run the development snake client using the `node play.js` command.
+
+## How to Play
+
 - Use `W` `A` `S` `D` to navigate the snake up, left, down, or right. If the snake collides with the wall or its own tail, it's game over. 
 - Use `h` `j` `k` `l` to send different special canned messages.
 - Press `Ctrl` + `C` to quit the game.
