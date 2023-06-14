@@ -22,7 +22,10 @@ This client project was built as a part of my learnings at [Lighthouse Labs](htt
 ## Getting Started
 
 - Follow steps inside the [snek server repo](https://github.com/cvsluis/snek-multiplayer) to run the server side.
-- Run the development snake client using the `node play.js` command.
+- Run the development snake client using the `node play.js` command, and type in a three letter username.
+```
+node play.js Cat
+```
 
 ## How to Play
 

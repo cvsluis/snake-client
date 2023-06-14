@@ -1,7 +1,10 @@
 const IP = 'localhost';
 const PORT = 50541;
 
-const PLAYER_NAME = "Cat";
+let PLAYER_NAME = process.argv[2];
+if (process.argv[2] === undefined) {
+  PLAYER_NAME = 'snk';
+}
 
 const INPUT_KEYS = {
   w: "Move: up",
