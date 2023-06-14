@@ -13,7 +13,7 @@ const connect = () => {
 
   // 'data' event handler to log data received from server
   conn.on("data", (data) => {
-    console.log(data);
+    console.log(data.trim());
   });
 
   // 'connect' event handler to log success and send playerName to server
